@@ -1,0 +1,109 @@
+body{
+	overflow: hidden;
+}
+.sign1
+{
+	
+	background-color: #64B5F6;
+}
+.cl1
+{
+background-color: #36e18f;	
+}
+.login
+{
+	/*background-color: #CDDC39;*/
+	font-size:30px;
+	/*font-family: '', cursive;*/
+	color:white;
+ 
+}
+.bgimage 
+{
+	
+	background-image: url("../images/preview.jpg");
+	/*-webkit-filter: blur(10px);
+	filter:blur(10px);*/
+	opacity: 0.9;
+	position: absolute;
+	width:100%;
+	height: 454px;
+	/*overflow: hidden;*/
+	/*display: block;*/
+
+	
+	
+}
+
+#hello
+{
+		background-image: url("../images/preview.jpg");
+		background-size:cover;
+    	-webkit-filter: blur(5px);
+    	-moz-filter: blur(13px);
+    	-o-filter: blur(13px);
+    	-ms-filter: blur(13px);
+    	filter: blur(13px);
+    	position:absolute;
+    	width:100%;
+    	height:100%;
+}
+
+
+/*.r1
+{
+background-color: #CDDC39	
+}*/
+.bg-2
+{
+	background-color: #CDDC39
+
+
+}
+.bg-3
+{
+	background-color: #3A2E24;
+	/*background-image: ""*/
+	padding-bottom: 100px;
+}
+
+.mec{
+	color: white;	
+	text-align: center;
+	font-size: 70px;
+	text-transform: uppercase;
+	font-weight:20px;
+	font-family: 'Passion One', cursive;
+}
+h2{
+	text-align: center;
+	font-size: 24px;
+	color: white;
+}
+.container-fluid
+{	padding-top: 0px;
+	padding-bottom: 100px;}
+
+#hell
+{
+	background-color:#B3E5FC; 
+	background-size:cover;
+	position:absolute;
+    	width:100%;
+    	height:100%;
+}
+
+/*.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation .75s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}*/

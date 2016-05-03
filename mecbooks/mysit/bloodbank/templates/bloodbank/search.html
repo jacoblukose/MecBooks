@@ -1,0 +1,153 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> MEC BOOKS</title>
+<style type="text/css">
+	h1{
+	color: black;	
+	text-align: center;
+	text-transform: uppercase;
+	font-weight:40px;
+	font-family: 'Passion One', cursive;
+}
+</style>
+</head>
+<body background="static/images/preview.jpg">
+<link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
+<div class="container-fluid cc1">
+<div class="row ">
+<h1 style="color:2196F3;font-size:30px;font-family: 'Passion One', cursive;" >Welcome to library building page</h1>
+</div>
+<div class="row text-center">
+<div class="col-lg-6">
+<form method="post" action="."
+  <br>
+  
+  ADD A BOOK:<br>
+  <input type="text" name="bookname" >
+  <br>
+
+<br>
+<!-- <input type="submit" name="addbook_submit_button" value="Submit"> -->
+<button type="submit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" name="addbook_submit_button" value="Submit">SUBMIT</button>
+</form>	
+
+  <!-- Modal -->
+
+
+<br>
+<form method="post" action="."
+  <br>
+  REMOVE A BOOK :<br>
+  <input type="text" name="rembookname" >
+  <br>
+
+<br>
+<!-- <input type="submit" name="rembook_submit_button" value="Submit"> -->
+<button type="submit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" name="rembook_submit_button" value="Submit">SUBMIT</button>
+</form>
+<br>
+
+<form method="post" action="."
+  <br>
+  
+  ADD A BOOK CATEGORY:<br>
+  <input type="text" name="categoryname" >
+  <br>
+
+<br>
+<!-- <input type="submit" name="addcat_submit_button" value="Submit"> -->
+<button type="submit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" name="addcat_submit_button" value="Submit">SUBMIT</button>
+</form>
+</form>
+<br>
+<form method="post" action="."
+  <br>
+  
+  REMOVE A BOOK CATEGORY:<br>
+  <input type="text" name="remcategoryname" >
+  <br>
+
+<br>
+<!-- <input type="submit" name="remcat_submit_button" value="Submit"> -->
+<button type="submit" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal" name="remcat_submit_button" value="Submit">SUBMIT</button>
+</form>
+<br>
+<!-- <form method="post" enctype="multipart/form-data">
+    <input type="file" name="myfile" />
+    </br>
+    <input type="submit" name="uploadfile" value="Uplooad" />
+</form -->
+
+<br>
+<br>
+
+<!-- <a href="login.html" type="button" class="btn btn-warning" >HOME PAGE</a> -->
+
+<a href="/bloodbank/logout" type="button" class="btn btn-default" >LOGOUT</a>
+<a href="/bloodbank/passchange" type="button" class="btn btn-default" >CHANGE PASSWORD</a>
+</div>
+<div class="col-lg-6 " style="padding-top:100px;">
+<div id="table" >
+<table border=1 class="table table-bordered table-hover">
+<thead>
+    <tr>
+    <th style="padding-left:200px;">&nbsp;&nbsp;{{list}}</th>
+    </tr>
+</thead>
+<tbody>
+    
+    {% for attr in list2 %}
+        <tr>
+        <td>{{ attr }}</td>
+    	</tr>
+    {% endfor %}
+    
+</tbody>
+</table>
+</div>
+
+<div class="bs-example">
+    <!-- Button HTML (to Trigger Modal) -->
+    <!-- <a href="#" class="btn btn-lg btn-primary">Launch Demo Modal</a> -->
+    <!-- <button type="button" class="btn btn-default" >launch</button> -->
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirmation</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Do you want to save changes you made to document before closing?</p>
+                    <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ $(".btn").click(function(){
+  $("#myModal").modal('show');
+ });
+});
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOOD BANK </title>
+
+<link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+</head>
+<body style="margin:94px;">
+<div class="container" > 
+<div class="row">
+
+<h1>ADD YOUR MISSING BOOK</h1>
+
+<div class="row padding-left:40px">
+</div class="col-lg-3">
+</div>
+
+</div class="col-lg-6">
+Choose the category to which book is to be added 
+<br>
+<form id="hello" method="post" action=".">
+
+<select name="categoryname" >
+{%for a in list%}
+<label for="{{ a.id_for_label }}">
+<option value={{a}}>{{a}}</option>	
+</label>
+{%endfor%}
+
+
+
+</select>
+
+<!-- {{list2}} -->
+<br>
+<br>
+<!-- {%for a in list2%}
+
+<input type="checkbox" name="choices" value={{a}}>{{a}}<br>
+{%endfor%} -->
+{{list2.as_p}}
+
+
+ <input type="submit" value="Click to add book">
+
+</form>
+</div>
+<div class="col-lg-3">
+</div>
+ 
+</div>
+</div>
+</div>
+<script>
+function hihi() {
+    document.getElementById("hello").submit();
+}
+</script>
+
+
+</body>
+</html>
+
+

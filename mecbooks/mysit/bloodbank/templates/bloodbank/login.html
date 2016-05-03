@@ -1,0 +1,134 @@
+  {%load staticfiles %}
+  <!DOCTYPE html>
+  <html>
+<!--   <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+
+  <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+  <!-- <link rel="stylesheet" href="{% static 'css/ediit.css'  %}"> -->
+
+<link rel="stylesheet" href="{% static 'css/ediit.css'  %}">
+  <head>
+  
+  <title>BLOOD BANK </title>
+  </head>
+
+  <body>
+  <div id="hello"></div>
+  <div class="container-fluid " style="height:683px;padding-top:50px;">
+  <div class="row">
+  
+  <div class="col-sm-3 login text-center" style="padding-top:50px;padding-left:140px; ">
+  <p>USER LOGIN </p>
+  </div>
+  </div>
+
+<div class="row r1 text-center " style="padding-top:50px;">
+
+  <div class="col-md-6 "  >
+  <form method="post" class="form-horizontal" action=".">
+   
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="login">Username:</label>  
+      <div class="col-sm-5">
+      <input type="text" class="form-control" name="firstname" placeholder="Enter username">
+      </div>
+    </div>
+    
+    <div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-5"> 
+      <input type="password" class="form-control" name="password" placeholder="Enter password">
+    </div>
+    </div>      
+    
+
+  <div class="form-group"> 
+    <div class="col-sm-offset-0 col-sm-9">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  
+  </form>
+  <br>
+  <br>
+  </div>
+
+<!-- end of half ths spaces  -->
+
+
+ <div class="col-md-6" style="padding-top:10px;" >
+ 
+ <div class="row r2">
+ 
+
+ <div class="colum-sm-3">
+ 
+ </div>
+ 
+
+ <div class="column-sm-9">
+ <form method="post" class="form-horizontal" action=".">
+   
+<!--   <form method="post" action=".">
+
+    <select name ="yoyi">
+    <option value="bookname">search by bookname</option>
+    <option value="authorname">Search by authorname</option>
+  </select>
+ -->
+<div class="form-group">
+
+  <label for="sel1">Select list:</label>
+  <select  style="padding-left:100px" class="form-control" name="yoyi">
+    <option value="bookname">search by bookname</option>
+    <option value="authorname">Search by authorname</option>
+    <option value="categories">Search by categories</option>
+  </select>
+</div>
+ <!--  <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">SELECT
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu " style=" 
+  left: 50%;
+  text-align: center;
+  right :auto;
+  transform: translate(-50%, 0);">
+    <li><a href="#">HTML</a></li>
+    <li><a href="#">CSS</a></li>
+    <li><a href=  "#">JavaScript</a></li>
+  </ul>
+</div> -->
+
+  <br>
+  <br>
+
+        <div class="form-group"  >
+          <label class="control-label col-sm-2" for="login">Type query:</label>  
+          <div class="col-sm-8">
+          <input type="text" class="form-control" name="queryname" placeholder="Enter keyword">
+          </div>
+        </div>
+       <br><br>
+    
+        <div class="form-group"> 
+        <div class="col-sm-offset-0 col-sm-9">
+          <button name="yoyo" type="submit" class="btn btn-default">Submit</button>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+  </form>
+  
+
+  </div>
+  
+  </div>      <!-- second row -->
+  </div>      <!-- other half of base row -->
+
+
+  </div>      <!-- base row -->
+  </div>      <!-- container -->
+  </body>
+  </html>

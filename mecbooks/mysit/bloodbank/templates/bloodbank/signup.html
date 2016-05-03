@@ -1,0 +1,74 @@
+ {%load staticfiles %}
+<!DOCTYPE html>
+<html>
+ <link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+  <link rel="stylesheet" href="{% static 'css/ediit.css'  %}">
+  
+<head>
+<title>BLOOD BANK </title>
+</head>
+<body >
+<div id="hello">
+</div>
+<div class="container-fluid sign1" style="padding-top: 210px;">
+<div class="row">
+<div class="col-md-4">
+
+</div>
+<div class="col-md-4 text-center"> 
+
+<h1>SIGNUP</h1>
+
+<form method="post" class="form-horizontal" action=".">
+
+<div class="form-group">
+      <label class="control-label col-sm-2" for="login">Username:</label>  
+      <div class="col-sm-5">
+      <input type="text" class="form-control" name="firstname" placeholder="Enter firstname">
+      </div>
+</div>
+
+<div class="form-group">
+      <label class="control-label col-sm-2" for="login">Firstname:</label>  
+      <div class="col-sm-5">
+      <input type="text" class="form-control" name="lastname" placeholder="Enter lastname">
+      </div>
+</div>
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password:</label>
+    <div class="col-sm-5"> 
+      <input type="password" class="form-control" name="pass1" placeholder="Enter password">
+    </div>
+    </div>  
+
+<div class="form-group">
+    <label class="control-label col-sm-2" for="pwd">Password again:</label>
+    <div class="col-sm-5"> 
+      <input type="password" class="form-control" name="pass2" placeholder="RE-Enter password">
+    </div>
+    </div>  
+
+ <div class="form-group"> 
+    <div class="col-sm-offset-0 col-sm-9">
+      <button type="submit" class="btn btn-default">Submit</button>
+    </div>
+  </div>
+  
+  <a href="/bloodbank/login">SIGNIN</a>
+  </form>
+
+
+</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

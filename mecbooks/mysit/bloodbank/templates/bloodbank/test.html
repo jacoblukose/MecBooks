@@ -1,0 +1,77 @@
+
+{% load staticfiles %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+	<title></title>
+	<style type="text/css">
+		.quote-box{
+    
+    overflow: hidden;
+    margin-top: -50px;
+    padding-top: -100px;
+    border-radius: 17px;
+    background-color: #4ADFCC;
+    margin-top: 25px;
+    color:white;
+    width: 325px;
+    box-shadow: 2px 2px 2px 2px #E0E0E0;
+    
+}
+
+.quotation-mark{
+    
+    margin-top: 0px;
+    font-weight: bold;
+    font-size:50px;
+    color:white;
+    font-family: "Times New Roman", Georgia, Serif;
+    
+}
+
+.quote-text{
+    
+    font-size: 19px;
+    margin-top: -45px;
+}
+
+
+	</style>
+</head>
+<body class="container">
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+       
+<div class="container" style="margin-top:35%;">
+    <blockquote class="quote-box">
+      <p class="quotation-mark">
+      <span class="glyphicon glyphicon-bullhorn" style="margin-top:0px;margin-bottom: 50px;"></span>
+      </p>
+      <p class="quote-text" style="margin-top:10px;">
+      {{comment}}
+      </p>
+      <hr>
+      
+      <div class="blog-post-actions">
+        <a href="/bloodbank/" type="button" class="btn btn-warning" >HOME PAGE</a>
+      
+      </div>
+    </blockquote>
+</div>
+
+
+
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

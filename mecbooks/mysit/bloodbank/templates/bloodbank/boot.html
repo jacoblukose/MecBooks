@@ -1,0 +1,94 @@
+
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOOD BANK </title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{% static 'css/bootstrap.css'  %}">
+<link rel="stylesheet" href="{% static 'css/ediit.css'  %}">
+</head>
+
+
+<body background="">
+<div class="container-fluid bg-1" style="padding-bottom: 29px;" >
+
+<div class="bgimage" style="left:0px;"> </div>
+
+<div class="row">
+<div class="col-sm-3">
+	
+</div>
+<div class="col-sm-6 mec" style="padding-top: 20px;">
+
+
+<span class="blink">MECBOOKS</span>
+
+</div>
+
+<div class="col-sm-3">
+	
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-sm-3">
+<!-- <img src="books.jpg" class="img-circle" class="img-responsive" width="304" height="236" > -->
+</div>
+
+<div class="col-sm-6" style="padding-top:66px">
+<h2>This is an online book library intended for students and faculty.The users can 
+search for books based on bookname and category name.
+The login is available only for facilitators.If a book or book category is missing , it will be automatically added to the library within repeated search pf the same.Facilitator will be given the privilege to add a new/missing book and new/missing book category.</h2>
+<small>MUST READ</small>
+</div>
+
+</div>
+</div>
+
+<div class="container-fluid bg-3 text-center small" style="padding-bottom:0px; padding-top:66px;">
+<div class="row" style="
+    padding: 62px;">
+
+<div class="col-sm-4">
+<a href="login" class="btn btn-primary btn-lg small">LOGIN
+<span class="glyphicon glyphicon-user"></span>
+</a>
+
+</div>
+
+
+<div class="col-sm-4 ">
+<a href="signup" class="btn btn-primary btn-lg ">SIGNUP
+<span class="glyphicon glyphicon-pencil"></span>
+</a>
+
+</div>
+
+
+<div class=" col-sm-4">
+<a href="login" class="btn btn-primary btn-lg"  >SEARCH
+	<span class="glyphicon glyphicon-search"></span> 
+	</a>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- <script src="js/bootstrap.js"></script> -->
+</body>
+<script type="text/javascript">
+	$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+</script>
+</html>
