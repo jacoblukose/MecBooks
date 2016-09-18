@@ -1,3 +1,3 @@
 # miniproject
 
-This is my git repository of my miniproject MECBOOKS.
+A Python -Django webapp which self-builds an online library using data ( ebooks ) scraped from the internet. 
